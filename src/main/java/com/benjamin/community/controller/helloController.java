@@ -11,6 +11,6 @@ public class helloController {
     @GetMapping("/hello")
     public String sayHi(@RequestParam(name = "name")String name, Model model){
         model.addAttribute("name",name);
-        return "hello";
+        return "index";
     }
 }
